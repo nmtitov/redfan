@@ -2,50 +2,35 @@
 
 1. Download `zip` archive of the `main` branch
 ```
-wget -c https://github.com/nmtitov/amdgpufan/archive/main.zip -O amdgpufan-main.zip
+wget -c https://github.com/nmtitov/amdgpufan/archive/main.zip -O amdgpufan-main.zip && sudo apt install unzip -y && unzip amdgpufan-main.zip && cd amdgpufan-main
 ```
 
-2. Install `unzip` if needed
-```
-sudo apt install unzip -y`
-```
-
-3. Extract arvhice
-```
-unzip amdgpufan-main.zip
-```
-
-4. Open created folder
-```
-cd amdgpufan-main
-```
-
-5. Copy script to `/usr/bin/`
+2. Copy script to `/usr/bin/`
 ```
 cp amdgpufan /usr/bin/
 ```
 
-6. Copy systemd service definition
+3. Copy systemd service definition
 ```
 cp amdgpufan.service /etc/systemd/system/
 ```
 
-7. Update systemd services
+4. Update systemd services
 ```
 sudo systemctl daemon-reload
 ```
 
-8. Run script
+5. Run script
 ```
 sudo systemctl start amdgpufan
 ```
 
-9. Enable autostart of the script
+6. Enable autostart of the script
 ```
 sudo systemctl enable amdgpufan
 ```
 
-10. Check if everything is ok
+7. Check if everything is ok
 ```
 sudo systemctl status amdgpufan
 ```
