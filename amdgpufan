@@ -1,0 +1,4 @@
+#!/bin/bash
+
+while sleep 1; do echo 0 > /sys/class/drm/card1/device/hwmon/hwmon1/pwm1_enable; done & disown
+
