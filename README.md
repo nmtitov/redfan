@@ -15,22 +15,17 @@ cp redfan /usr/bin/
 cp redfan.service /etc/systemd/system/
 ```
 
-4. Update systemd services
-```
-sudo systemctl daemon-reload
-```
-
-5. Run script
+4. Run script
 ```
 sudo systemctl start redfan
 ```
 
-6. Enable autostart of the script
+5. Enable autostart of the script
 ```
 sudo systemctl enable redfan
 ```
 
-7. Check if everything is ok
+6. Check if everything is ok
 ```
 sudo systemctl status redfan
 ```
