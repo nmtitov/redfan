@@ -2,17 +2,17 @@
 
 1. Download `zip` archive of the `main` branch
 ```
-wget -c https://github.com/nmtitov/amdgpufan/archive/main.zip -O amdgpufan-main.zip && sudo apt install unzip -y && unzip amdgpufan-main.zip && cd amdgpufan-main
+wget -c https://github.com/nmtitov/redfan/archive/main.zip -O redfan-main.zip && sudo apt install unzip -y && unzip redfan-main.zip && cd redfan-main
 ```
 
 2. Copy script to `/usr/bin/`
 ```
-cp amdgpufan /usr/bin/
+cp redfan /usr/bin/
 ```
 
 3. Copy systemd service definition
 ```
-cp amdgpufan.service /etc/systemd/system/
+cp redfan.service /etc/systemd/system/
 ```
 
 4. Update systemd services
@@ -22,17 +22,17 @@ sudo systemctl daemon-reload
 
 5. Run script
 ```
-sudo systemctl start amdgpufan
+sudo systemctl start redfan
 ```
 
 6. Enable autostart of the script
 ```
-sudo systemctl enable amdgpufan
+sudo systemctl enable redfan
 ```
 
 7. Check if everything is ok
 ```
-sudo systemctl status amdgpufan
+sudo systemctl status redfan
 ```
 
 # Description

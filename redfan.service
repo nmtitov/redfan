@@ -3,7 +3,7 @@ Description=Force disable PWM for AMD card0 device
 
 [Service]
 Type=forking
-ExecStart=/usr/bin/amdgpufan
+ExecStart=/usr/bin/redfan
 
 [Install]
 WantedBy=multi-user.target
